@@ -7,6 +7,8 @@
 ![forthebadge](https://forthebadge.com/images/badges/fuck-it-ship-it.svg)  ![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)
 
 > 基于NullAtomHttpServer开发的一款抽象话转换器API
+>
+> ​      亚      文      化      
 
 ---
 
@@ -22,6 +24,10 @@
   注：参数必须填，而且必为两个，顺序不得颠倒
 
   下载地址：https://github.com/KeKe12030/ChouXiangAPI/releases
+  
+  词库文件地址：https://github.com/KeKe12030/ChouXiangAPI/blob/master/ciku/pinyin.properties
+  
+  把词库文件下载到本地，然后放在jar的第二个参数中运行
 
 ---
 
@@ -63,3 +69,17 @@
 ![M7LIVBPFW0P@YY`L42`M}~R.png](https://pic.rmb.bdstatic.com/bjh/699c3db6dc0c116d3d577dd839607b8f.png)
 
 ---
+
+### 特别鸣谢：
+
+> 感谢@chenxuuu 大神的 https://github.com/chenxuuu/chouxianghua 项目，提供了词库
+
+---
+
+### #TODO（咕咕咕？）
+
++ 支持整个词语转换（代码里已经写道PullWrod接口了，但是一直没时间⛏）
++ 支持多种词库（已经在收集了，一个一个做适配也行，就是没时间）
+
+---
+
