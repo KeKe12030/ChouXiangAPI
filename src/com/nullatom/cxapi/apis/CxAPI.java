@@ -2,6 +2,7 @@ package com.nullatom.cxapi.apis;
 
 import com.github.sinboun.Emoji;
 import com.google.gson.Gson;
+import com.nullatom.cxapi.Main;
 import net.sourceforge.pinyin4j.PinyinHelper;
 import net.sourceforge.pinyin4j.format.HanyuPinyinCaseType;
 import net.sourceforge.pinyin4j.format.HanyuPinyinOutputFormat;
@@ -22,10 +23,9 @@ public class CxAPI {
     private static Properties pro = new Properties();
     private static InputStream is = null;
 
-    private static final String PINYIN_CIKU_URI = "./ciku/pinyin.properties";
+    private static String pinyinCikuPath = Main.cikuPath;
 
     //自动分词接口地址
-
     private static final String PULL_WORD_URL = "http://api.pullword.com/get.php?source={1}&param1=0&param2=1&json=1";
 
     static{
@@ -168,10 +168,11 @@ public class CxAPI {
             if(is!=null) {//如果不是空，则关闭
                 is.close();
             }
-            is = new FileInputStream(PINYIN_CIKU_URI);//拼音词库
+            is = new FileInputStream(pinyinCikuPath);//拼音词库
             pro.load(new BufferedReader(new InputStreamReader(is)));//使用Reader为了避免emoji读取错误
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
 }
