@@ -88,7 +88,7 @@ public class CxAPI {
         /*msgs 和 pinyins 的下标对应的字符是一样的*/
 
         System.out.println("========================");
-        System.out.println(msg+"\n转换成功，内容为：\n"+result);
+        System.out.println("输入字符："+msg+"\n转换成功，内容为：\n"+"输出字符"+result);
         return result.toString();
 //        return "宁🐎的这是人👄🐎？👴翻译⑧来！";
     }

@@ -20,13 +20,8 @@ public class NSHandler implements NAServerHandler {
 
 
                             response.setResponseType("text/json;charset=UTF-8");
-                            if (request.getMethod().equals("get")) {
-                                response.print(NOT_SUPPORT_GET);//如果是GET，则返回不支持
-                                response.pushToBrowser(500);//500状态码
-
-
-                            }else if (request.getMethod().equals("post")){
-                                //如果请求cxapi是POST方式
+                            if (request.getMethod().equals("post") || request.getMethod().equals("get")){
+                                //如果是GET/SET
                                 if (request.getParameter("msg")==null){//如果没有msg这个参数
                                     response.print(PARAM_NOT_CORRECT);
                                     response.pushToBrowser(500);
@@ -45,8 +40,6 @@ public class NSHandler implements NAServerHandler {
                                 response.pushToBrowser(500);//500状态码
                                 return;
                             }
-                            break;
-
 
 
                 default:
