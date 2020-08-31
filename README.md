@@ -4,9 +4,17 @@
 
 ---
 
-![forthebadge](https://forthebadge.com/images/badges/fuck-it-ship-it.svg)![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)
+![forthebadge](https://forthebadge.com/images/badges/fuck-it-ship-it.svg)  ![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)
 
 > 基于NullAtomHttpServer开发的一款抽象话转换器API
+
+---
+
+### #演示API
+
+> 地址：http://api.mcplugin.cn/cxapi
+
+---
 
 ### # 使用方法：
 + 下载ChouXiangAPI.jar之后，直接`java -jar ChouXiangAPI.jar 服务器运行端口 拼音词库文件绝对目录`
