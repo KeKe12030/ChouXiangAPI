@@ -9,12 +9,20 @@
 > 基于NullAtomHttpServer开发的一款抽象话转换器API
 >
 > ​      亚      文      化      
+>
+> PoweredBy NullAtomServer <https://github.com/KeKe12030/NullAtomHttpServer>
 
 ---
 
 ### #演示API
 
 > 地址：http://api.mcplugin.cn/cxapi
+
+---
+
+### 博客文章：
+
+> https://blog.mcplugin.cn/p/611
 
 ---
 
