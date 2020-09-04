@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="NullAtomHttpServer">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../JavaSpace/NullAtomHttpServer.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
