@@ -1,8 +1,6 @@
 package com.nullatom.cxapi.apis;
 
-import com.github.sinboun.Emoji;
 import com.google.gson.Gson;
-import com.nullatom.cxapi.Main;
 import net.sourceforge.pinyin4j.PinyinHelper;
 import net.sourceforge.pinyin4j.format.HanyuPinyinCaseType;
 import net.sourceforge.pinyin4j.format.HanyuPinyinOutputFormat;
@@ -18,12 +16,13 @@ import java.util.Properties;
  * @author VioletTec
  * */
 public class CxAPI {
+    public static String pinyinCikuPath = "";
+
     private static Gson gson = new Gson();
 
     private static Properties pro = new Properties();
     private static InputStream is = null;
 
-    private static String pinyinCikuPath = Main.cikuPath;
 
     //自动分词接口地址
     private static final String PULL_WORD_URL = "http://api.pullword.com/get.php?source={1}&param1=0&param2=1&json=1";

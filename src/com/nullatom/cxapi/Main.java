@@ -7,14 +7,13 @@ import com.nullatom.httpserver.NAServer;
 import java.util.Scanner;
 
 public class Main {
-    public static String cikuPath = "";
     public static void main(String[] args) {
         int port = 50000;
         if(args.length==2){
             port = Integer.valueOf(args[0]);
-            cikuPath = args[1];
+            CxAPI.pinyinCikuPath = args[1];
         }else{
-            throw new RuntimeException("必须设置连两个参数 1.服务器运行端口 2.拼音词库绝对路径（不得含有空格）");
+            throw new RuntimeException("您必须设置连两个参数 1.服务器运行端口 2.拼音词库绝对路径（不得含有空格）");
         }
         NAServer ns = new NAServer(Integer.valueOf(args[0]));
         NSHandler handler = new NSHandler();
