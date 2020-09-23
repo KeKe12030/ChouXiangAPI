@@ -16,7 +16,7 @@ public class NSHandler implements NAServerHandler {
     private final String SERVER_ERROR = "服务器出错了，请稍后重试！";//服务器崩溃
 
     private void sendError(Request request,Response response){
-        response.println);
+        response.print(SERVER_ERROR);
         try {
             response.pushToBrowser(500);
         } catch (IOException e) {
